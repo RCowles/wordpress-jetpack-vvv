@@ -7,8 +7,7 @@ This is a [VarryingVagrantVagrant](https://github.com/Varying-Vagrant-Vagrants/V
 You'll need to first have [VarryingVagrantVagrant](https://github.com/Varying-Vagrant-Vagrants/VVV) installed. Then, follow the steps below to get up and running with this Jetpack VVV.
 
 1. Clone this repo (or [download it](https://github.com/RCowles/wordpress-jetpack-vvv/)) into your `www` directory.
-2. Re-provision your VVV with `vagrant provision`.
-3. `vagrant up`.
+2. Re-provision your VVV with `vagrant up --provision`.
 
 This will create a `/vagrant-install/www/wordpress-jetpack/htdocs` folder with a fresh WordPress install.
 
