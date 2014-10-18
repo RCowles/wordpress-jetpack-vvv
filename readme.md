@@ -4,7 +4,9 @@ This is a [VarryingVagrantVagrant](https://github.com/Varying-Vagrant-Vagrants/V
 
 ## Install
 
-1. Clone this repo (or [download it](https://github.com/RCowles/wordpress-jetpack-vvv/)) into your `www/` folder.
+You'll need to first have [VarryingVagrantVagrant](https://github.com/Varying-Vagrant-Vagrants/VVV) installed. Then, follow the steps below to get up and running with this Jetpack VVV.
+
+1. Clone this repo (or [download it](https://github.com/RCowles/wordpress-jetpack-vvv/)) into your `www` directory.
 2. Re-provision your VVV with `vagrant provision`.
 3. `vagrant up`.
 
@@ -14,7 +16,7 @@ You can access your new local site http://jetpack.wordpress.dev/ and start testi
 
 ## Included plugins
 
-This will install the [Jetpack plugin](https://github.com/automattic/jetpack), as well as a [Jetpack GitHub plugin](https://github.com/enejb/jetpack-github) that allows you to change which branch you are using from the WordPress Dashboard.
+The installation will include the [Jetpack plugin](https://github.com/automattic/jetpack), as well as a [Jetpack GitHub plugin](https://github.com/enejb/jetpack-github) that allows you to change which branch you are using from the WordPress Dashboard.
 
 ## Reset
 

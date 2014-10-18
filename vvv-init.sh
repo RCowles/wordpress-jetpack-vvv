@@ -1,4 +1,6 @@
-# If we delete htdocs, let's just start over.
+# Init script for VVV Jetpack.
+
+# If we delete htdocs, let's start over.
 if [ ! -d htdocs ]
 then
 
@@ -14,8 +16,16 @@ then
 
 	# Configure and setup WordPress.
 	wp core config --allow-root --dbname="wordpress_jetpack" --dbuser=wp --dbpass=wp --dbhost="localhost" --extra-php <<PHP
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
+
+	// Trigger debug mode
+	define( 'WP_DEBUG', true );
+
+	// Enable debug log
+	define( 'WP_DEBUG_LOG', true );
+
+	// Trigger Jetpack's debug mode
+	define ('JETPACK_DEV_DEBUG', true);
+
 PHP
 
 	wp core install --allow-root --url=jetpack.wordpress.dev --title="A Jetpack VVV" --admin_user=admin --admin_password=password --admin_email=your@email.com
